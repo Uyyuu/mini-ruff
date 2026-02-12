@@ -12,7 +12,10 @@ pub struct LintEngine {
 impl LintEngine {
     /// Creates a new lint engine with default rules
     pub fn new() -> Self {
-        let rules: Vec<Box<dyn Rule>> = vec![Box::new(rules::todo::TodoRule)];
+        let rules: Vec<Box<dyn Rule>> = vec![
+            Box::new(rules::todo::TodoRule),
+            Box::new(rules::print_call::PrintCallRule),
+        ];
 
         Self { rules }
     }
