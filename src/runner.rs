@@ -84,7 +84,7 @@ mod tests {
     #[test]
     fn test_run_no_issues() -> Result<()> {
         let mut file = NamedTempFile::new()?;
-        writeln!(file, "print('hello')")?;
+        writeln!(file, "x = 1 + 2")?;
 
         let runner = Runner::new();
         let exit_code = runner.run(file.path());
