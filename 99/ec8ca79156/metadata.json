@@ -1,0 +1,31 @@
+{
+  "cli_version": "0.4.2",
+  "checkpoint_id": "99ec8ca79156",
+  "strategy": "manual-commit",
+  "branch": "feat/print-rules",
+  "checkpoints_count": 3,
+  "files_touched": [
+    "docs/MR002.md",
+    "src/lint/mod.rs",
+    "src/lint/rule.rs",
+    "src/lint/rules/mod.rs",
+    "src/lint/rules/print_call.rs",
+    "src/runner.rs"
+  ],
+  "sessions": [
+    {
+      "metadata": "/99/ec8ca79156/0/metadata.json",
+      "transcript": "/99/ec8ca79156/0/full.jsonl",
+      "context": "/99/ec8ca79156/0/context.md",
+      "content_hash": "/99/ec8ca79156/0/content_hash.txt",
+      "prompt": "/99/ec8ca79156/0/prompt.txt"
+    }
+  ],
+  "token_usage": {
+    "input_tokens": 28,
+    "cache_creation_tokens": 38391,
+    "cache_read_tokens": 687715,
+    "output_tokens": 4321,
+    "api_call_count": 22
+  }
+}
